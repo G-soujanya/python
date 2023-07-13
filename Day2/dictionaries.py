@@ -1,0 +1,21 @@
+dict={1:"python",2:"day"}
+print(dict[1])
+dict[2]="programming"
+print(dict)
+d={"k1":"v1","k2":"v2","k3":"v3","k4":"v4"}
+print(d.values())
+print(d.keys())
+print(d.items())
+print(d.get("k1"))
+print(len(d))
+d.update({"k2":"v9"})
+print(d)
+d.clear()
+print(d)
+#nested keys
+new={"college":{"student":{"id":161}}}
+print(new)
+print(new["college"])
+print(new["college"]["student"])
+print(new["college"]["student"]["id"])
+print(new.get("college"))
