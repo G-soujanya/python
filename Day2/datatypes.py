@@ -1,0 +1,31 @@
+#integer
+a=10
+print(a,type(a))
+#float
+b=10.4
+print(b,type(b))
+#strings
+c="python"
+print(c,type(c))
+#boolean
+d=True
+print(d,type(d))
+#datatypes(collections)
+#list
+list=[1,10,"python"]
+print(list,type(list))
+#tuple
+tuple=a,
+print(tuple,type(tuple))
+#set
+set={1,1,2,"f","r"}
+print(set,type(set))
+#dictonaries
+dict={1:"python",2:"day"}
+print(dict,type(dict))
+#operators
+#division
+print(4/3)
+#floor division
+print(4//3)
+#naming for variables no special symbols allowed except under score
