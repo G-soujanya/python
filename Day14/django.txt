@@ -1,0 +1,21 @@
+python -m venv ll_env 
+=>used to create an environment named ll_env 
+source ll_env/bin/activate 
+=>activate the virtual envirnoment 
+pip install --upgrade pip 
+=>used to update pip 
+pip install django 
+=>django will be available only when the ll_env environment is active 
+django-admin startproject ll_project .
+=>used to set up a new project called ll_project.The dot at the end of the command creates the new project with a directory structure that will make it easy to deploy the app to a server when we are finished developing it.
+ls 
+=>shows that django has created a new directory called ll_project it also created a manage.py file,which is a short program that takes in commands and feeds them to the relevant part of django 
+ls ll_project 
+=>shows the files in ll_project.the seetings.py file controls how django interacts with your system and manages your project.the urls.py file tells django which pages to build in response to browser request.the wsgi.py file helps django serve the files it creates.
+python manage.py migrate 
+=>anytime we modify a database,we say we are migrating the database issuing the migrate command migrating the database,issuing the migrate command for the first time tells django to make sure the database matches the current state of the project.
+here,django reports that will prepare the database to store information it needs to handle administrative and authentication tasks.
+django create another file called db.sqlite 
+python manage.py runserver 
+=>django first checks to make sure the project is set up properly.it then reports the version of django in use and the name of the setting file in use.
+finally,it reports the url where the project is being served.
